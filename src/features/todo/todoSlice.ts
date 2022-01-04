@@ -1,7 +1,28 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Todo } from "../../models";
 
-const initialTodoState: Todo[] = [];
+const initialTodoState: Todo[] = [
+  {
+    id: Date.now(),
+    text: "Devenir développeur",
+    completed: true,
+  },
+  {
+    id: Date.now(),
+    text: "Trouver un poste de développeur Front",
+    completed: false,
+  },
+  {
+    id: Date.now(),
+    text: "Trouver un appartement",
+    completed: false,
+  },
+  {
+    id: Date.now(),
+    text: "Passer le permis",
+    completed: false,
+  },
+];
 
 export const todoSlice = createSlice({
   name: "todo",
