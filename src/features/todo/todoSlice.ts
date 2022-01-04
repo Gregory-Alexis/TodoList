@@ -9,7 +9,7 @@ const initialTodoState: Todo[] = [
   },
   {
     id: Date.now(),
-    text: "Trouver un poste de développeur Front",
+    text: "Trouver un poste de développeur Front React",
     completed: false,
   },
   {
