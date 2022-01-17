@@ -9,7 +9,7 @@ const TodoList = () => {
       <ul className="mt-12 bg-white rounded-md py-5">
         {todoList.map((todo) => (
           <li
-            className="text-black flex justify-center p-3  w-96 "
+            className="text-black flex justify-center p-3  w-96"
             key={todo.id}
           >
             <Todo todo={todo.text} id={todo.id} completed={todo.completed} />
