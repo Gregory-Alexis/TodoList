@@ -96,6 +96,18 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 
 Hook permettant la simplification du code en définissant le type ( définit dans le store ) de la fonction `useAppDispatch` et de `useSelector`.
 
+## Model
+
+```
+export interface Todo {
+  id: number;
+  text: string;
+  completed: boolean;
+}
+```
+
+Création d'une interface `Todo` qui contiendra les éléments nécessairent à la création des tâches.
+
 # Composants
 
 ## TodoList
