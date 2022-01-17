@@ -1,7 +1,7 @@
 import { FaTrashAlt } from "react-icons/fa";
 import { MdOutlineDoneAll } from "react-icons/md";
 import { useAppDispatch } from "../app/hooks";
-import { completedTodo, removeTodo } from "../features/todo/todoSlice";
+import { completedTodo, removeTodo } from "../features/todoSlice";
 
 interface Props {
   todo: string;
