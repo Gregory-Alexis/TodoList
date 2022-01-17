@@ -25,9 +25,7 @@ const Todo: React.FC<Props> = ({ todo, id, completed }) => {
         </button>
         <button
           className="hover:text-green-500"
-          onClick={() => {
-            dispatch(completedTodo(id));
-          }}
+          onClick={() => dispatch(completedTodo(id))}
         >
           <MdOutlineDoneAll />
         </button>

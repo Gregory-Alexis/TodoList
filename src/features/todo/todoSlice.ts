@@ -3,22 +3,17 @@ import { Todo } from "../../models";
 
 const initialTodoState: Todo[] = [
   {
-    id: Date.now(),
-    text: "Devenir développeur",
-    completed: true,
-  },
-  {
-    id: Date.now(),
+    id: 1,
     text: "Trouver un poste de développeur Front React",
     completed: false,
   },
   {
-    id: Date.now(),
+    id: 2,
     text: "Trouver un appartement",
     completed: false,
   },
   {
-    id: Date.now(),
+    id: 3,
     text: "Passer le permis",
     completed: false,
   },
