@@ -1,6 +1,6 @@
 import React from "react";
 import { useAppDispatch } from "../app/hooks";
-import { addTodo } from "../features/todo/todoSlice";
+import { addTodo } from "../features/todoSlice";
 import Done from "../images/done.svg";
 
 interface Props {
@@ -10,6 +10,7 @@ interface Props {
 
 const InputField: React.FC<Props> = ({ text, setText }) => {
   const dispatch = useAppDispatch();
+
   const handleAddTodo = (e: React.FormEvent) => {
     const newTodo = { text, completed: false, id: Date.now() };
     dispatch(addTodo(newTodo));
